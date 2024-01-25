@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  @apply text-zinc-800;
+
+}
+
+button {
+  @apply
+    text-sm font-semibold tracking-wide px-8 py-3 bg-red-600 text-white rounded-full shadow-lg shadow-red-200
+    hover:bg-red-700 hover:shadow-red-300 transition duration-200
+    disabled:bg-gray-300 disabled:text-gray-500 disabled:shadow-none disabled:cursor-not-allowed;
+}
+
+button.btn-outlined {
+    @apply
+      bg-transparent border-2 hover:bg-gray-100 border-gray-200 shadow-gray-50 text-zinc-800 hover:shadow-gray-100 px-[calc(0.25rem*7.5)] py-2.5
+      disabled:border-gray-300 disabled:text-gray-300 disabled:shadow-none disabled:cursor-not-allowed;
+}
+
+button.btn-sleek {
+    @apply
+        bg-transparent hover:bg-gray-100 shadow-none text-zinc-800
+        disabled:border-gray-300 disabled:text-gray-300 disabled:shadow-none disabled:cursor-not-allowed;
+}
+
+.btn-icon {
+  @apply align-middle inline text-xl first:mr-2 last:ml-2;
+}
+nav {
+  @apply flex justify-between px-8 border-2 py-4;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

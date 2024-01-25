@@ -63,6 +63,18 @@ export default function Home() {
                 <img src="./logoipsum-214.svg" alt=""/>
             </nav>
         </section>
+
+        <section className="pt-10">
+            <h2 className="text-3xl font-bold pb-6">
+                Inputs
+            </h2>
+            <input
+                type="text"
+                className="p-4 border border-zinc-300 focus:border-zinc-400 focus-visible:outline-none"
+                placeholder="Enter text here..."
+            />
+        </section>
+
     </main>
   );
 }

@@ -43,6 +43,8 @@ button.btn-sleek {
 .btn-icon {
   @apply align-middle inline text-xl first:mr-2 last:ml-2;
 }
+
+
 nav {
   @apply flex justify-between px-8 border-2 py-4;
 }

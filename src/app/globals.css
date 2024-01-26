@@ -20,32 +20,37 @@ body {
   @apply text-zinc-800;
 }
 
-button {
+button, .btn {
   @apply
     text-sm font-semibold tracking-wide px-8 py-3 bg-primary-600 text-white rounded-full shadow-lg shadow-primary-200
     hover:bg-primary-700 hover:shadow-primary-300 transition duration-200
     disabled:bg-gray-300 disabled:text-gray-500 disabled:shadow-none disabled:cursor-not-allowed;
 }
 
-button.btn-outlined {
+.btn-outlined {
     @apply
       bg-transparent border-2 hover:bg-gray-100 border-gray-200 shadow-gray-50 text-zinc-800 hover:shadow-gray-100 px-[calc(0.25rem*7.5)] py-2.5
       disabled:border-gray-300 disabled:text-gray-300 disabled:shadow-none disabled:cursor-not-allowed;
 }
 
-button.btn-light {
+.btn-light {
     @apply
       bg-white hover:bg-gray-50 shadow-gray-300 text-zinc-800
+        hover:shadow-gray-300
       disabled:border-gray-300 disabled:text-gray-300 disabled:shadow-none disabled:cursor-not-allowed;
 }
 
-button.btn-sleek {
+.btn-sleek {
     @apply
         bg-transparent hover:bg-gray-100 shadow-none text-zinc-800
         disabled:border-gray-300 disabled:text-gray-300 disabled:shadow-none disabled:cursor-not-allowed;
 }
 
-button.btn-circle {
+.btn-thin {
+    @apply px-4;
+}
+
+.btn-circle {
     @apply rounded-full px-4 py-4;
 }
 
@@ -55,7 +60,7 @@ button.btn-circle {
 
 
 nav {
-  @apply flex justify-between items-center px-8 py-4;
+  @apply flex justify-between items-center px-8 py-4 gap-8;
 }
 
 @layer utilities {

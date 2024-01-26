@@ -79,6 +79,41 @@ export default function Home() {
                     </div>
                     <div>
                         <h3 className="font-bold pb-3">
+                            Normal
+                        </h3>
+                        <p>
+                            Regular navigation bar
+                        </p>
+                        <nav>
+                            <button className="btn-sleek btn-thin leading-4 -ml-8">
+                                <HiMenuAlt2 className="btn-icon" />
+                                <span className="hidden sm:inline">Menu</span>
+                            </button>
+                            <ul className="flex flex-row gap-2 ml-auto">
+                                <li>
+                                    <a href="#" className="btn btn-sleek btn-thin leading-4">
+                                        <RxDashboard className="btn-icon" />
+                                        <span className="hidden lg:inline">Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="btn btn-sleek btn-thin leading-4">
+                                        <PiCalendarBlankLight className="btn-icon" />
+                                        <span className="hidden lg:inline">Publications</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="btn btn-sleek btn-thin btn-circle">
+                                        <PiCalendarPlusLight className="btn-icon" />
+                                        <span className="hidden lg:inline">Calendar</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <img src="./logoipsum-214.svg" alt=""/>
+                        </nav>
+                    </div>
+                    <div>
+                        <h3 className="font-bold pb-3">
                             Extended
                         </h3>
                         <p>
@@ -87,15 +122,15 @@ export default function Home() {
                         <nav>
                             <div className="flex gap-6">
                                 <a href="#" className="active:text-primary-600 transition-colors active:after:bg-primary-600 hover:after:bg-black after:w-full after:relative after:-bottom-1 after:block after:h-0.5 after:transition-all">
-                                    <RxDashboard className="inline mr-2 align-middle" />
+                                    <RxDashboard className="inline md:mr-2 align-middle" />
                                     <span className="hidden md:inline align-text-top">Home</span>
                                 </a>
                                 <a href="#" className="active:text-primary-600 transition-colors active:after:bg-primary-600 hover:after:bg-black after:w-full after:relative after:-bottom-1 after:block after:h-0.5 after:transition-all">
-                                    <PiCalendarBlankLight className="inline mr-2 align-middle" />
+                                    <PiCalendarBlankLight className="inline md:mr-2 align-middle" />
                                     <span className="hidden md:inline align-text-top">Publications</span>
                                 </a>
                                 <a href="#" className="after:bg-primary-600 active:text-primary-600 transition-colors active:after:bg-primary-600 after:w-full after:relative after:-bottom-1 after:block after:h-0.5 after:transition-all">
-                                    <PiCalendarPlusLight className="inline mr-2 align-middle" />
+                                    <PiCalendarPlusLight className="inline md:mr-2 align-middle" />
                                     <span className="hidden md:inline align-text-top">Active page</span>
                                 </a>
                             </div>

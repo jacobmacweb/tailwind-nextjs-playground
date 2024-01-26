@@ -55,7 +55,7 @@ button.btn-circle {
 
 
 nav {
-  @apply flex justify-between px-8 py-4;
+  @apply flex justify-between items-center px-8 py-4;
 }
 
 @layer utilities {
